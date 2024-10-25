@@ -20,12 +20,14 @@ namespace Luboyera_Joel_Tut1
                 y = 20, 
                 z = 30;
 
-            int age = -28;
+            string textAge = "-27";
+            int age = Convert.ToInt32(textAge);
             Console.WriteLine(age);
             Console.WriteLine(int.MinValue);
             Console.WriteLine(int.MaxValue);
 
-            long bigNumber = -9000000000L;
+            string textbigNumber = "-9000000000";
+            long bigNumber = Convert.ToInt64(textbigNumber);
             Console.WriteLine(bigNumber);
             Console.WriteLine(long.MinValue);
             Console.WriteLine(long.MaxValue);
@@ -35,7 +37,8 @@ namespace Luboyera_Joel_Tut1
             Console.WriteLine(double.MaxValue);
             Console.WriteLine(double.MinValue);
 
-            float precision = 6.768570F;
+            string textPrecision = "6.768570";
+            float precision = Convert.ToSingle(textPrecision);
             Console.WriteLine(precision);
             Console.WriteLine(float.MinValue);
             Console.WriteLine(float.MaxValue);
@@ -47,6 +50,27 @@ namespace Luboyera_Joel_Tut1
 
             Console.ReadLine();
 
+            Console.WriteLine("What is Your Name");
+            string name = Console.ReadLine();
+            Console.WriteLine(name + " Welcome to our lesson");
+            Console.ReadKey();
+
+            string name1 = "Aba";
+            char letter = 'A';
+
+            Console.Write("Your name is ");
+            Console.WriteLine(name1);
+            Console.WriteLine(letter);
+
+
+            double num = 24;
+            num /= 3;
+            Console.WriteLine(num);
+
+            string name2 = "Yana";
+            name +=
+
+            Console.ReadLine();
 
         }
     }
