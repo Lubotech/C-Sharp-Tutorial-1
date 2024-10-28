@@ -68,7 +68,12 @@ namespace Luboyera_Joel_Tut1
             Console.WriteLine(num);
 
             string name2 = "Yana";
-            name +=
+            name2 += " is a programmer";
+            Console.WriteLine(name2);
+
+            char letter2 = 'A';
+            letter2 += 'B';
+            Console.WriteLine('A');
 
             Console.ReadLine();
 
