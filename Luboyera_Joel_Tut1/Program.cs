@@ -62,15 +62,19 @@ namespace Luboyera_Joel_Tut1
             Console.WriteLine(name1);
             Console.WriteLine(letter);
 
+            Console.WriteLine();
 
             double num = 24;
             num /= 3;
             Console.WriteLine(num);
 
-            string name2 = "Yana";
+            Console.WriteLine();
 
-            name2 += "is a programmer";
+            string name2 = "Yana";
+            name2 += " is a programmer. ";
             Console.WriteLine(name2);
+
+            Console.WriteLine();
 
             char letter2 = 'a';
             letter2 += 'b';
@@ -121,20 +125,49 @@ namespace Luboyera_Joel_Tut1
 
             Console.Write("Enter the second number: ");
             int numberB = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
 
             int answer = numberA * numberB;
+            int actualAnswer = 0;
 
-            Console.Write("Value of " + numberA + " X " + numberB + ": ");
-            int actualAnswer = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Whats the value of " + numberA + " X " + numberB + " ? ");
+            Console.WriteLine();
 
-            if (answer == actualAnswer)
+            /*
+            while (answer != actualAnswer)
             {
-                Console.WriteLine("Well done!");
+                Console.Write("Enter your answer: ");
+                actualAnswer = Convert.ToInt32(Console.ReadLine());
+
+                if (answer == actualAnswer)
+                {
+                    Console.WriteLine("Well done!");
+                }
+                else if (answer != actualAnswer)
+                {
+                    Console.WriteLine("Close but it was wrong!");
+                    Console.WriteLine();
+                }
             }
-            else if (answer != actualAnswer)
+            */
+
+            do
             {
-                Console.WriteLine("Close but it was wrong!");
-            }
+                Console.Write("Enter your answer: ");
+                actualAnswer = Convert.ToInt32(Console.ReadLine());
+
+                if (answer == actualAnswer)
+                {
+                    Console.WriteLine("Well done!");
+                }
+                else if (answer != actualAnswer)
+                {
+                    Console.WriteLine("Close but it was wrong!");
+                    
+                }
+            } while (answer != actualAnswer);
+
+            Console.WriteLine();
 
             Console.Write("Enter a day of the week: ");
             int day = Convert.ToInt32(Console.ReadLine());
@@ -165,12 +198,61 @@ namespace Luboyera_Joel_Tut1
                     break;
             }
 
-            for (int i = 0; i < 10; i++)
-            {
+            Console.WriteLine();
 
+            Console.Write("What do you want to repeat?: ");
+            string message = Console.ReadLine();
+            Console.Write("And how many times do you want to repeat it?: ");
+          int loopCounter = Convert.ToInt32(Console.ReadLine());
+
+            if (loopCounter <= 0)
+            {
+                Console.WriteLine("Sorry, please enter a value above 0");
             }
+            else
+            {
+                for (int j = 0; j < loopCounter; j++)
+                {
+                    Console.WriteLine("Hello");
+                }
+            }
+
+            Console.WriteLine();
+
+            // condition ? true : false
+
+            for (int k = 0; k <= 10; k += 3)
+            {
+                Console.WriteLine(k);
+            }
+            Console.WriteLine();
+
+            var l = 0;
+            while ( l < 10)
+            {
+                l++;
+                Console.WriteLine(l);
+            }
+            Console.WriteLine();
+
+            string result = age >= 0 ? "Valid" : "Invalid";
+            Console.WriteLine(result);
+
+            var value = 1000D / 12.34D;
+
+            Console.WriteLine(value);
+            Console.WriteLine(string.Format("{0}", value));
+            Console.WriteLine(string.Format("{0:0.#}", value));
+            Console.WriteLine(string.Format("{0:0.00}", value));
+            Console.WriteLine(string.Format("{0} {1}", value, 1000));
+
+            double cash = 10D / 3D;
+
+            Console.WriteLine(cash);
+            Console.WriteLine(string.Format("$10 / $3 = ${0:0.00}", cash));
+
             Console.ReadLine();
 
         }
     }
-}
+} 
