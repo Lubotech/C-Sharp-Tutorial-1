@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Luboyera_Joel_Tut1
 {
@@ -80,8 +81,8 @@ namespace Luboyera_Joel_Tut1
             letter2 += 'b';
             Console.WriteLine(letter2);
 
-            float i = 2; i /= 3;
-            Console.WriteLine(++i);
+            float n = 2; n /= 3;
+            Console.WriteLine(++n);
 
             const int vat = 20;
             const double percentVAT = (20 / 100D);
@@ -203,7 +204,7 @@ namespace Luboyera_Joel_Tut1
             Console.Write("What do you want to repeat?: ");
             string message = Console.ReadLine();
             Console.Write("And how many times do you want to repeat it?: ");
-          int loopCounter = Convert.ToInt32(Console.ReadLine());
+            int loopCounter = Convert.ToInt32(Console.ReadLine());
 
             if (loopCounter <= 0)
             {
@@ -213,7 +214,7 @@ namespace Luboyera_Joel_Tut1
             {
                 for (int j = 0; j < loopCounter; j++)
                 {
-                    Console.WriteLine("Hello");
+                    Console.WriteLine(message);
                 }
             }
 
@@ -250,7 +251,102 @@ namespace Luboyera_Joel_Tut1
 
             Console.WriteLine(cash);
             Console.WriteLine(string.Format("$10 / $3 = ${0:0.00}", cash));
+            Console.WriteLine(cash.ToString("C"));
+            Console.WriteLine(cash.ToString("C0"));
+            Console.WriteLine(cash.ToString("C1"));
+            Console.WriteLine(cash.ToString("C2"));
 
+            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-AU")));
+
+            bool success = true;
+
+            while (success)
+            {
+
+                Console.Write("Enter a number: ");
+                string numInput = Console.ReadLine(); // 10h
+
+                if (int.TryParse(numInput, out int num1))
+                {
+                    success = false;
+                    Console.WriteLine(num1);
+                }
+                else
+                {
+                    Console.WriteLine("Failed to convert!");
+                }
+
+            }
+
+            /*
+               Ask the user for a number for the table
+               Write a for loop to print X times table
+            */
+
+            Console.Write("Enter a digit: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("{0} X {1} = {2}", i, number, i * number);
+            }   
+
+            /*
+             Create a for loop from 1 to X (15)
+             3 and 5 = FizzBuzz
+             3 = Fizz
+             5 = Buzz
+             else = number
+             */ 
+
+            bool threeDiv = false;
+            bool fiveDiv = false;
+
+            for ( int i = 0; i < 15; i++)
+            {
+                threeDiv = i % 3 == 0;
+                fiveDiv = i % 5 == 0;
+                //9 % 3 = 0
+                if (threeDiv && fiveDiv)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (threeDiv)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (fiveDiv) 
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            // \t \n \" \\ = \
+            var speech = "He said \"something\"";
+            Console.WriteLine(speech);
+
+            //$ +
+            //$ "Your name is {name}"
+            //"Your name is " + name
+
+            string path = @"C:\users\desktop\C#";
+            Console.WriteLine(path);
+
+            var someone = @"Hello ""Someone""";
+            Console.WriteLine(someone);
+
+            string surname = "Sashulya";
+            var age2 = 25;
+            Console.WriteLine("Surname: " + surname + "\nAge: " + age2);
+            Console.WriteLine("Your surname is {0}, and your age is {1}", surname, age2);
+            Console.WriteLine($"Your surname is {surname}, and your age is {age2}");
             Console.ReadLine();
 
         }
