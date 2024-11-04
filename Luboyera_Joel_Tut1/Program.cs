@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Threading;
 
 namespace Luboyera_Joel_Tut1
 {
@@ -151,7 +152,7 @@ namespace Luboyera_Joel_Tut1
                 }
             }
             */
-
+           
             do
             {
                 Console.Write("Enter your answer: ");
@@ -347,7 +348,83 @@ namespace Luboyera_Joel_Tut1
             Console.WriteLine("Surname: " + surname + "\nAge: " + age2);
             Console.WriteLine("Your surname is {0}, and your age is {1}", surname, age2);
             Console.WriteLine($"Your surname is {surname}, and your age is {age2}");
+
+            string test = string.Concat("Your name is ", surname, " and your age is", age2);
+            Console.WriteLine(test);
+            Console.WriteLine(string.Concat("Your name is ", surname, " and your age is", age2));
+
+            string[] names = new string[] { "Joel", " Ksushi", " Angie" };
+
+            Console.WriteLine(names);
+
+            Console.WriteLine(string.Concat(names));
+
+            string name4 = string.Empty;
+            Console.WriteLine(name4);
+
+            string message1 = "Hello";
+            string compare = "Hello";
+
+            if (message1 == compare)
+            {
+                Console.WriteLine("Same");
+            }
+            else
+            {
+                Console.WriteLine("Diff");
+            }
+
+            Console.WriteLine("Enter your name: ");
+            string name5 = Console.ReadLine();
+
+            //if (name5 != "")
+            if (!name5.Equals(""))
+            {
+                Console.WriteLine("Your name is " + name5);
+            }
+            else
+            {
+                Console.WriteLine("Invalid name input ");
+            }
+
+            char[] chars = new char[] { 'H', 'e', 'l', 'i', 'o' };
+            object newCompare = new string(chars);
+
+            //if (message1.Equals(newCompare))
+            if (newCompare == message1)
+                Console.WriteLine("Same");
+            else
+                Console.WriteLine("Different");
+
+            string message2 = "C# is awesome ";
+
+            /*
+            Console.WriteLine(message2[0]);
+            Console.WriteLine(message2[1]);
+            Console.WriteLine(message2[2]);
+            Console.WriteLine(message2[3]);
+            */
+
+            for (int i = 0; i < message2.Length; i++)
+            {
+                Console.Write(message2[i]);
+                Thread.Sleep(1000);
+            }
+
+
+            Console.WriteLine();
+            Console.WriteLine(message2.Contains("C"));
+
+            bool contains = false;
+
+            for (int i = 0; i < message2.Length; i++)
+            {
+
+            }
+
             Console.ReadLine();
+
+
 
         }
     }
