@@ -419,12 +419,165 @@ namespace Luboyera_Joel_Tut1
 
             for (int i = 0; i < message2.Length; i++)
             {
-
+                if (message2[i].Equals("C"))
+                {
+                    contains = true;
+                }
             }
 
+            /*
+             Ask user to input message
+             Print in order
+             Print in reverse
+             */
+
+            Console.Write("Enter your message: ");
+            string message3 = Console.ReadLine();
+
+            Console.WriteLine(message3[0]);
+            Console.WriteLine(message3.Length);
+
+            for (int i = 0; i < message3.Length; i++)
+            {
+                Console.Write(message3[i]);
+            }
+
+            Console.WriteLine();
+
+            for (int i = message3.Length - 1; i >= 0; i--)
+            {
+                Console.Write(message3[i]);
+            }
+
+            Console.WriteLine();
+
+            Console.Write("Enter password: ");
+            string password = Console.ReadLine();
+
+            Console.Write("Enter password again: ");
+            string passwordC = Console.ReadLine();  
+
+            if (!password.Equals(string.Empty))
+            {
+                if (!passwordC.Equals(string.Empty))
+                {
+                    if (password.Length >= 6 && passwordC.Length >= 6)
+                    {
+                        if (password.Equals(passwordC))
+                        {
+                            Console.WriteLine("Passwords match");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Passwords do not match");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please enter 6 or more characters!");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a password confirmation.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter a password.");
+            }
+
+            int num2 = 5;
+            int num3 = 10;
+            int num4 = 15;
+            int num5 = 20;
+
+            int total = num2 + num3 + num4;
+
+            int[] numbers = new int[4];
+            /*
+            Console.Write("Enter a number: ");
+            numbers[0] = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter a number: ");
+            numbers[1] = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter a number: ");
+            numbers[2] = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter a number: ");
+            numbers[3] = Convert.ToInt32(Console.ReadLine());
+            */
+
+            //Console.WriteLine($"{num2} {num3} {num4}");
+            //Console.Write($"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}");
+            
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.Write("Enter a number: ");
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < numbers.Length; i++) 
+            {
+                Console.Write($"{numbers[i]} ");
+            }
+
+            Console.WriteLine();
+
+            foreach (int i in numbers)
+            {
+                Console.Write($"{i} ");
+            }
+
+            Console.WriteLine();
+
+            const int angleCount = 3;
+            int[] angles = new int[3]; 
+
+            for (int i = 0; i < angles.Length; i++)
+            {
+                Console.Write($"Enter angle {i + 1}: ");
+                angles[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            int angleSum = 0;
+
+            foreach (int angle in angles)
+            {
+                angleSum += angle;
+            }
+            Console.WriteLine(angleSum);
+            
+            Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid!");
+
+            int[] numberz = new int[]
+            {
+                10, 2, 6, 11, 5, 3, 13, 12, 9, 1, 4, 8, 7
+            };
+
+            /*string test1 = "";
+            test1.Replace(" ", " ");*/
+            
+
+            Array.Sort(numberz);
+
+            foreach (int numz in numberz)
+            {
+                Console.Write($"{numz} ");
+            }
+         
+            Array.Reverse(numberz);
+            foreach (var item in numberz)
+            {
+                Console.Write($"{item} ");
+            }
+
+            Array.Clear(numberz, 0, numberz.Length);
+
+            foreach (var item in numberz)
+
             Console.ReadLine();
-
-
 
         }
     }
