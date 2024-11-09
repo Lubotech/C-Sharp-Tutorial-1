@@ -551,46 +551,7 @@ namespace Luboyera_Joel_Tut1
             
             Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid!");
 
-            int[] numberz = new int[]
-            {
-                10, 2, 6, 11, 5, 3, 13, 12, 9, 1, 4, 8, 7
-            };
-
-            /*string test1 = "";
-            test1.Replace(" ", " ");*/
             
-
-            Array.Sort(numberz);
-
-            foreach (int numz in numberz)
-            {
-                Console.Write($"{numz} ");
-            }
-
-            Console.WriteLine();
-
-            Array.Reverse(numberz);
-            foreach (var item in numberz)
-            {
-                Console.Write($"{item} ");
-            }
-
-            Console.WriteLine();
-
-            Array.Clear(numberz, 0, numberz.Length);
-
-            foreach (var item in numberz)
-            {
-                Console.Write($"{item} ");
-            }
-
-            Array.Clear(numberz, 5, 5);
-
-            for (int i = 5; i < 10; i++)
-            {
-                numberz[i] = default;
-            }
-
             // Array indexOf method used to search through an array to get a position
 
             int[] numberss = new int[] 
@@ -614,7 +575,7 @@ namespace Luboyera_Joel_Tut1
             {
                 Console.WriteLine($"Number {search} has not been found");
             }
-            
+
             /*
             int position = -1;
 
@@ -635,6 +596,8 @@ namespace Luboyera_Joel_Tut1
                 Console.WriteLine($"Number {search} has not been found");
             }
             */
+
+            
 
             Console.ReadLine();
 
