@@ -425,67 +425,11 @@ namespace Luboyera_Joel_Tut1
                 }
             }
 
-            /*
-             Ask user to input message
-             Print in order
-             Print in reverse
-             */
-
-            Console.Write("Enter your message: ");
-            string message3 = Console.ReadLine();
-
-            Console.WriteLine(message3[0]);
-            Console.WriteLine(message3.Length);
-
-            for (int i = 0; i < message3.Length; i++)
-            {
-                Console.Write(message3[i]);
-            }
+           
 
             Console.WriteLine();
 
-            for (int i = message3.Length - 1; i >= 0; i--)
-            {
-                Console.Write(message3[i]);
-            }
-
-            Console.WriteLine();
-
-            Console.Write("Enter password: ");
-            string password = Console.ReadLine();
-
-            Console.Write("Enter password again: ");
-            string passwordC = Console.ReadLine();  
-
-            if (!password.Equals(string.Empty))
-            {
-                if (!passwordC.Equals(string.Empty))
-                {
-                    if (password.Length >= 6 && passwordC.Length >= 6)
-                    {
-                        if (password.Equals(passwordC))
-                        {
-                            Console.WriteLine("Passwords match");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Passwords do not match");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Please enter 6 or more characters!");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Please enter a password confirmation.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Please enter a password.");
-            }
+            
 
             int num2 = 5;
             int num3 = 10;
@@ -531,73 +475,6 @@ namespace Luboyera_Joel_Tut1
             }
 
             Console.WriteLine();
-
-            const int angleCount = 3;
-            int[] angles = new int[3]; 
-
-            for (int i = 0; i < angles.Length; i++)
-            {
-                Console.Write($"Enter angle {i + 1}: ");
-                angles[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            int angleSum = 0;
-
-            foreach (int angle in angles)
-            {
-                angleSum += angle;
-            }
-            Console.WriteLine(angleSum);
-            
-            Console.WriteLine(angleSum == 180 ? "Valid" : "Invalid!");
-
-            
-            // Array indexOf method used to search through an array to get a position
-
-            int[] numberss = new int[] 
-            {
-                90, 199, 34, 78, 50, 20, 199, 34
-            };
-
-            Console.Write("Enter number to search: ");
-            int search = Convert.ToInt32(Console.ReadLine());
-
-
-            //int position = Array.IndexOf(numbers, search); // method for searching through everything
-            //int position = Array.IndexOf(numbers, search, 4); // method for searching upto a certain position 
-            int position = Array.IndexOf(numbers, search, 1, 5); // method for searching in a certain range
-
-            if (position > -1)
-            {
-                Console.WriteLine($"Number {search} has been found at position {position + 1}");
-            }
-            else
-            {
-                Console.WriteLine($"Number {search} has not been found");
-            }
-
-            /*
-            int position = -1;
-
-            for (int i = 0; i < numberss.Length; i++)
-            {
-                if (numberss[i] == search)
-                {
-                    position = i;
-                }
-            }
-
-            if (position > -1)
-            {
-                Console.WriteLine($"Number {search} has been found at position {position + 1}");
-            }
-            else
-            {
-                Console.WriteLine($"Number {search} has not been found");
-            }
-            */
-
-            
 
             Console.ReadLine();
 
