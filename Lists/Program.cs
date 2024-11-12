@@ -28,7 +28,14 @@ namespace Lists
                 Console.WriteLine(listNumbers[i]);
             }
 
+            Console.WriteLine();
+
             listNumbers.RemoveAt(0);
+
+            foreach (var item in listNumbers)
+            {
+                Console.Write($"{item} ");
+            }
 
             Console.ReadLine();
         }
