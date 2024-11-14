@@ -20,10 +20,11 @@ namespace Array_of_Multiples_Exercise
             int num = 7;
             int length = 10;
             int[] result = new int[length];
+            int counter = 0;
 
-            for (int i = 0; i < result.Length; i++) 
+            for (int i = 1; i <= result.Length; i++, counter++) 
             {
-                result[i] = num * i ;
+                result[counter] = num * i ;
             }
 
             foreach (var item in result)

@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd_Even_Number_split_Exerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array of Multiples Exercise", "Array of Multiples Exercise\Array of Multiples Exercise.csproj", "{20338528-093B-4CBF-983A-523AA4C566F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{942A7431-40C8-4E93-804C-EB00B519A283}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{20338528-093B-4CBF-983A-523AA4C566F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20338528-093B-4CBF-983A-523AA4C566F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20338528-093B-4CBF-983A-523AA4C566F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942A7431-40C8-4E93-804C-EB00B519A283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942A7431-40C8-4E93-804C-EB00B519A283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942A7431-40C8-4E93-804C-EB00B519A283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942A7431-40C8-4E93-804C-EB00B519A283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
