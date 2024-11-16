@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array of Multiples Exercise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{942A7431-40C8-4E93-804C-EB00B519A283}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Void", "Void\Void.csproj", "{EAC6C712-D00D-4FAD-BAB3-76275FFF0C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnTypeFunction", "ReturnType\ReturnTypeFunction.csproj", "{EE560FD0-FB40-494E-9037-D5EB1C4DE391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{942A7431-40C8-4E93-804C-EB00B519A283}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942A7431-40C8-4E93-804C-EB00B519A283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942A7431-40C8-4E93-804C-EB00B519A283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC6C712-D00D-4FAD-BAB3-76275FFF0C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC6C712-D00D-4FAD-BAB3-76275FFF0C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC6C712-D00D-4FAD-BAB3-76275FFF0C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC6C712-D00D-4FAD-BAB3-76275FFF0C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE560FD0-FB40-494E-9037-D5EB1C4DE391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE560FD0-FB40-494E-9037-D5EB1C4DE391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE560FD0-FB40-494E-9037-D5EB1C4DE391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE560FD0-FB40-494E-9037-D5EB1C4DE391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
